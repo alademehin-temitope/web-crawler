@@ -21,7 +21,7 @@ for row in table.findAll('tr'):
 
 	list_of_rows.append(list_of_cells)
 
-outfile = open("./inmate.csv", "wb")
+outfile = open("./data gotten.csv", "wb")
 writer = csv.writer(outfile)
 writer.writerow(["Number", "food", "Nutritions"])
 writer.writerows(list_of_rows)
